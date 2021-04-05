@@ -70,7 +70,7 @@
 				$("#generate").click(function () {
 					let finalURL =
 						"https://chart.googleapis.com/chart?cht=qr&chl=" +
-						htmlEncode($("#content").val()) +
+						htmlEncode($("#url").val()) +
 						"&chs=160x160&chld=L|0";
 					$(".qr-code").attr("src", finalURL);
 				});
